@@ -38,15 +38,55 @@ app.post('/send', async (req, res) => {
     const info = await transporter.sendMail({
       from: process.env.SMTP_USER,
       to: process.env.SMTP_USER,
-      subject: `New Message from ${name}`,
-      html: `
-        <h3>📸 New Contact Form Submission</h3>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Project Type:</strong> ${projectType}</p>
-        <p><strong>Budget:</strong> ${budget}</p>
-        <p><strong>Message:</strong> ${message}</p>
-      `,
+     subject: `📩 New Inquiry Received – ${name}`,
+html: `
+  <div style="background-color: #1a1a1a; padding: 30px; font-family: 'Segoe UI', Tahoma, sans-serif; color: #ffffff;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #2b2b2b; border-radius: 10px; padding: 25px;">
+      
+      <h2 style="color: #ffffff;">📥 Contact Request Received</h2>
+      <p style="color: #bbbbbb; font-size: 14px; line-height: 1.5;">
+        A visitor has submitted a new inquiry through ODDNOTEVEN STUDIO portfolio contact form. Below is the recorded information for your review.
+      </p>
+
+      <table style="width: 100%; margin-top: 20px; border-collapse: collapse; font-size: 15px;">
+        <tr style="border-bottom: 1px solid #444;">
+          <td style="padding: 10px; color: #aaaaaa;">👤 Name</td>
+          <td style="padding: 10px; color: #ffffff;">${name}</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #444;">
+          <td style="padding: 10px; color: #aaaaaa;">📧 Email</td>
+          <td style="padding: 10px;">
+            <a href="mailto:${email}" style="color: #4ea8ff;">${email}</a>
+          </td>
+        </tr>
+        <tr style="border-bottom: 1px solid #444;">
+          <td style="padding: 10px; color: #aaaaaa;">📂 Project Type</td>
+          <td style="padding: 10px; color: #ffffff;">${projectType}</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #444;">
+          <td style="padding: 10px; color: #aaaaaa;">💰 Budget</td>
+          <td style="padding: 10px; color: #ffffff;">${budget}</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; color: #aaaaaa; vertical-align: top;">📝 Message</td>
+          <td style="padding: 10px;  color:#ffffff;">
+            ${message}
+          </td>
+        </tr>
+      </table>
+
+      <p style="margin-top: 25px; font-size: 13px; color: #cccccc;">
+        OddNotEven Studio has received a new contact form submission. Feel free to connect with the sender to explore their project request.
+      </p>
+
+      <p style="margin-top: 15px; font-size: 12px; color: #666666;">
+        — OddNotEven Studio Contact Form Notification
+      </p>
+
+    </div>
+  </div>
+`,
+
     });
 
     console.log("✅ Email sent:", info.messageId);
