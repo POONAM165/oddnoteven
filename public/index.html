@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODDNOTEVEN Perspective | From the ODD comes the UNEXPECTED</title>
+    <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+
+
+
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <!-- Logo Image -->
+                <div class="nav-left">
+                    <!-- <img src="" alt="Logo" class="logo-img" /> -->
+                    <a href="#" class="logo-text" onclick="showPage('home')">ODDnotEVEN STUDIO</a>
+                </div>
+
+                <!-- Navigation Links -->
+                <ul class="nav-links">
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" onclick="showPage('about')">About</a></li>
+                    <li><a href="#" onclick="showPage('services')">Services</a></li>
+                    <li><a href="#" onclick="showPage('portfolio')">Portfolio</a></li>
+                    <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                </ul>
+
+                <!-- Phone Number -->
+                <div class="nav-right">
+                    <a href="tel:+919876543210" class="phone-number">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="phone-svg" viewBox="0 0 24 24" width="16"
+                            height="16" fill="#b82e24">
+                            <path
+                                d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.004 1.004 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z" />
+                        </svg>
+                        +91 98765 43210
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Home Page -->
+    <div id="home" class="page-section active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="particle" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+            <div class="particle" style="top: 60%; left: 80%; animation-delay: 2s;"></div>
+            <div class="particle" style="top: 40%; left: 70%; animation-delay: 4s;"></div>
+            <div class="particle" style="top: 80%; left: 20%; animation-delay: 1s;"></div>
+            <div class="particle" style="top: 30%; left: 90%; animation-delay: 3s;"></div>
+
+            <div class="hero-content">
+                <h1>ODDNOTEVEN</h1>
+                <p class="tagline">From the ODD comes the UNEXPECTED</p>
+                <p class="subtitle">We see differently to create differently</p>
+                <div class="cta-buttons">
+                    <a href="#" class="cta-btn cta-btn-primary" onclick="showPage('portfolio')">View Portfolio</a>
+                    <a href="#" class="cta-btn cta-btn-secondary" onclick="showPage('about')">Explore Our Vision</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Are Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Who We Are</h2>
+                <div class="about-grid fade-in">
+                    <div class="about-text">
+                        <p>Born from the clash of contrast and curiosity, ODDNOTEVEN is not just a studio — it's a
+                            realm. A bold space where visuals speak, stories whisper, and darkness creates light.</p>
+                    </div>
+                    <div class="about-visual"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Focus Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Our Focus</h2>
+                <div class="services-grid fade-in">
+                    <div class="service-card">
+                        <h3>Visual Storytelling</h3>
+                        <p>Crafting narratives that transcend the ordinary, weaving tales through light and shadow.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Dramatic Lighting</h3>
+                        <p>Mastering the dance between darkness and illumination to create powerful emotional impact.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Conceptual Shoots</h3>
+                        <p>Bringing abstract ideas to life through carefully orchestrated visual experiences.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Reality x Fantasy</h3>
+                        <p>Blending the tangible with the mystical to create otherworldly visual experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Preview -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Gallery Preview</h2>
+                <div class="portfolio-grid fade-in">
+                    <div class="portfolio-item" data-title="Dark Conceptual">🌙</div>
+                    <div class="portfolio-item" data-title="Portrait Series">👤</div>
+                    <div class="portfolio-item" data-title="Ethereal Imagery">✨</div>
+                    <div class="portfolio-item" data-title="Cinematic Moments">🎬</div>
+                    <div class="portfolio-item" data-title="Warrior & Fantasy">⚔️</div>
+                    <div class="portfolio-item" data-title="Shadows & Silence">🔥</div>
+                </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="#" class="cta-btn cta-btn-primary" onclick="showPage('portfolio')">See Full Portfolio</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page-section">
+        <div style="height: 80px;"></div>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Origins</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>What happens when you combine rebellion, raw emotion, and art?</h3>
+                        <p>ODDNOTEVEN Perspective was born from a need to feel what others fear. Created in 2024, forged
+                            by a Graphic Designer and Visual Storyteller who doesn't just click — but creates.</p>
+                    </div>
+                    <div class="about-visual"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Our Belief</h2>
+                <div class="about-text" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h3 style="font-size: 3rem; margin-bottom: 30px;">Dark. Deeper. Different.</h3>
+                    <p style="font-size: 1.3rem; line-height: 1.8;">We blend myth with modern aesthetics. Shadows with
+                        light. Emotion with imagination. Our tools are simple yet powerful: Camera, Light, Fire, and
+                        Imagination.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Services Page -->
+    <div id="services" class="page-section">
+        <div style="height: 80px;"></div>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">From Imagination to Immortality</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Creative Concept Shoots</h3>
+                        <p>Fashion, Fantasy, Thematic projects that push boundaries and challenge perceptions.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Cinematic Portrait Photography</h3>
+                        <p>Studio or location-based sessions with heavy direction and dramatic storytelling.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Visual Storytelling Projects</h3>
+                        <p>Photo series that narrate stories frame by frame, creating emotional journeys.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Album & Poster Designs</h3>
+                        <p>Professionally curated visuals for digital or print that capture the essence of your vision.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Short Visual Reels</h3>
+                        <p>Instagram-style reels with transitions, flames, and dark tone edits that captivate audiences.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Collaborations</h3>
+                        <p>Work with stylists, models, artists, and other visionaries to create extraordinary
+                            experiences.</p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="#" class="cta-btn cta-btn-primary" onclick="showPage('contact')">Let's Create Something
+                        Odd</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Portfolio Page -->
+    <div id="portfolio" class="page-section">
+        <div style="height: 80px;"></div>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Portfolio</h2>
+
+                <!-- Portfolio Filter Buttons -->
+                <div class="portfolio-filters" style="text-align: center; margin-bottom: 30px;">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="conceptual">Conceptual</button>
+                    <button class="filter-btn" data-filter="portrait">Portrait</button>
+                    <button class="filter-btn" data-filter="cinematic">Cinematic</button>
+                    <button class="filter-btn" data-filter="fantasy">Fantasy</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="conceptual" data-title="Dark Conceptual">🌙</div>
+                    <div class="portfolio-item" data-category="portrait" data-title="Portrait Series">👤</div>
+                    <div class="portfolio-item" data-category="fantasy" data-title="Ethereal Imagery">✨</div>
+                    <div class="portfolio-item" data-category="cinematic" data-title="Cinematic Moments">🎬</div>
+                    <div class="portfolio-item" data-category="fantasy" data-title="Warrior & Fantasy">⚔️</div>
+                    <div class="portfolio-item" data-category="conceptual" data-title="Shadows & Silence">🔥</div>
+                    <div class="portfolio-item" data-category="fantasy" data-title="Mystic Visions">🔮</div>
+                    <div class="portfolio-item" data-category="portrait" data-title="Urban Darkness">🏙️</div>
+                    <div class="portfolio-item" data-category="cinematic" data-title="Fire & Ice">❄️</div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Popup Overlay -->
+    <div class="popup-overlay" id="galleryPopup">
+        <div class="popup-container">
+            <div class="popup-content">
+                <button class="close-popup" onclick="closeGallery()">&times;</button>
+
+                <div class="popup-header">
+                    <h2 class="popup-title" id="galleryTitle">Gallery Title</h2>
+                    <p class="popup-subtitle" id="gallerySubtitle">Explore the collection</p>
+                </div>
+
+                <div class="popup-gallery" id="galleryGrid">
+                    <!-- Gallery items will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen Image Viewer -->
+    <div class="fullscreen-overlay" id="fullscreenViewer">
+        <div class="fullscreen-container">
+            <button class="fullscreen-close" onclick="closeFullscreen()">&times;</button>
+            <button class="nav-arrow prev" onclick="navigateImage(-1)">‹</button>
+            <button class="nav-arrow next" onclick="navigateImage(1)">›</button>
+            <img class="fullscreen-image" id="fullscreenImage" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page-section">
+        <div style="height: 80px;"></div>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Ready to Enter the Realm?</h2>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pprojectType">Project Type</label>
+                        <select id="projectType" name="projectType">
+                            <option value="">Select Project Type</option>
+                            <option value="concept-shoot">Creative Concept Shoot</option>
+                            <option value="portrait">Cinematic Portrait</option>
+                            <option value="storytelling">Visual Storytelling</option>
+                            <option value="design">Album/Poster Design</option>
+                            <option value="reels">Short Visual Reels</option>
+                            <option value="collaboration">Collaboration</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select Budget Range</option>
+                            <option value="under-1000">Under $1,000</option>
+                            <option value="1000-3000">$1,000 - $3,000</option>
+                            <option value="3000-5000">$3,000 - $5,000</option>
+                            <option value="5000-10000">$5,000 - $10,000</option>
+                            <option value="10000-plus">$10,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your vision..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Summon the Studio</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">ODDNOTEVEN Perspective</div>
+                <div class="footer-text">Reimagining Everything from the Mortal Realm</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
